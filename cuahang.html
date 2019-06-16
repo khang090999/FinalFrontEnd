@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Our stores - The Coffee House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="cuahang.css" />
+    <script src="cuahang.js"></script>
+</head>
+    <body id="home" onload="scroll(); addPlace(); expand(); getInfo() ">
+        <div id="menu">
+                <a href="home.html" class="logo">
+                        <img src="logo.png" id="whiteLogo">
+                        <img src="logo-black.png" id="blackLogo">
+                 </a>
+                 <span id="showMenu" onclick="showList()">
+                        <i id="ngang" class="fa fa-bars"></i>
+                        <i id="cheo" class="fa fa-close"></i>
+                </span>
+        </div>        
+        <div id="head">
+            <h3>HỆ THỐNG CỬA HÀNG</h3>
+            <p>CHÚNG TÔI ĐÃ CÓ MẶT TẠI HÀ NỘI, THÀNH PHỐ HỒ CHÍ MINH VÀ BIÊN HOÀ</p>
+               <form>
+                   <select id="myList">
+                       <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                       <option value="Hà Nội">Hà Nội</option>
+                       <option value="Đà Nẵng">Đà Nẵng</option>
+                       <option value="Biên Hòa">Biên Hòa</option>
+                       <option value="Vũng Tàu">Vũng Tàu</option>
+                   </select>
+                   <button id="find" type="button" ><i class="fa fa-search"></i></button>
+               </form>
+               
+            </div>
+        <div id="list">
+                <ul>
+                    <li><a href="home.html">TRANG CHỦ</a></li>
+                    <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="cuahang.html">CỬA HÀNG</a></li>
+                    <li><a href="giaohang.html" target="_blank">GIAO HÀNG</a></li>
+                    <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                </ul>
+        </div>  
+        <div id="hcm" class="place"> 
+
+        </div>
+        <div id="hn" class="place">
+
+        </div>
+        <div id="dn" class="place">
+
+        </div>
+        <div id="vt" class="place">
+
+        </div>
+        <div id="bh" class="place">
+
+        </div>
+        <div id="myModal" class="modal" >
+
+        
+            <span class="close">&times;</span>
+          
+            
+            <img class="modal-content" id="img01">
+          
+          
+ 
+          </div>
+        <div id="last">
+            <a href="home.html" >
+                    <img src="logo.png" >
+             </a>
+        <p>
+                223 Võ Văn Tần, Quận 3, HCM<br>
+                Hotline : 028 71 087 088 <br>
+                Giao hàng miễn phí : 1800 6936<br><br>
+                Điều khoản bảo mật<br><br>
+        </p>
+        <p id="end">
+               &copy; 2014 - 2017 - ALL RIGHTS RESERVED. POWERED BY HARAVAN 
+        </p>
+    </div>
+</body>
+</html>

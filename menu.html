@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Menu - The Coffee House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="menu.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="menu.js"></script>
+</head>
+<body id="home" onload="scroll(); ">
+    <div id="menu">
+            <a href="home.html" class="logo">
+                    <img src="logo.png" id="whiteLogo">
+                    <img src="logo-black.png" id="blackLogo">
+             </a>
+             <span id="showMenu" onclick="showList()">
+                    <i id="ngang" class="fa fa-bars"></i>
+                    <i id="cheo" class="fa fa-close"></i>
+            </span>
+    </div>        
+    
+    <div id="head">
+            <h2>MENU</h2>
+           <div id="drink">
+               <a onclick="goSmooth(500)">ESPRESSO & VIETNAMESE COFFEE</a> -
+               <a onclick="goSmooth(1700)">ICE BLENDED COFFEE</a> -
+               <a onclick="goSmooth(2800)">SPECIAL TEA</a> - 
+               <a onclick="goSmooth(4200)">SMOOTHIES AND MOCKTAIL</a>
+            </div>
+        </div>
+    <div id="list">
+            <ul>
+                <li><a href="home.html">TRANG CHỦ</a></li>
+                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="cuahang.html">CỬA HÀNG</a></li>
+                <li><a href="giaohang.html" target="_blank">GIAO HÀNG</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+    </div>  
+    <div id="para1" class="para">
+       
+    </div>
+    <div class="category" id="espresso">
+        <h1>ESPRESSO & COFFEE</h1>
+        <p>
+            TỪNG LY CÀ PHÊ ĐƯỢC LÀM RA BỞI NIỀM ĐAM MÊ VỚI HƯƠNG VỊ, SỰ CHĂM CHÚT CHO HẠNH PHÚC CỦA KHÁCH
+            HÀNG, NIỀM HÀO HỨNG ĐƯỢC PHỤC VỤ VÀ SỰ TỈ MỈ ĐỂ ĐẠT TỚI CHẤT LƯỢNG CÀ PHÊ TUYỆT VỜI NHẤT.
+        </p>
+        <table>
+            <tr>
+                <th></th>
+                <th>SMALL</th>
+                <th>MEDIUM</th>
+            </tr>
+            <tr>
+                <td class="name">
+                    <p>AMERICANO</p>
+                    <span>Espresso, nước nóng</span>
+                </td>
+                <td>35,000Đ</td>
+                <td>45,000Đ</td>
+            </tr>
+            <tr>
+                <td class="name">
+                    <p>CAPPUCCINO</p>
+                    <span>Espresso, sữa tươi, bọt sữa</span>
+                </td>
+                <td>45,000Đ</td>
+                <td>55,000Đ</td>
+            </tr>
+            <tr>
+                <td class="name">
+                    <p>CARAMEL MACCHIATO</p>
+                    <span>Espresso, sữa tươi, caramel</span>
+                </td>
+                <td>55,000Đ</td>
+                <td>65,000Đ</td>
+            </tr>
+            <tr>
+                <td class="name">
+                    <p>ESPRESSO</p>
+                </td>
+                <td>35,000Đ</td>
+                <td>45,000Đ</td>
+            </tr>
+            <tr>
+                <td class="name">
+                    <p>ESPRESSO SỮA</p>
+                    <span>Espresso sữa nóng/ Espresso sữa đá</span>
+                </td>
+                <td>35,000Đ</td>
+                <td>45,000Đ</td>
+            </tr>
+            <tr>
+                <td class="name">
+                    <p>LATTE</p>
+                    <span>Espesso, sữa tươi</span>
+                </td>
+                <td>45,000Đ</td>
+                <td>55,000Đ</td>
+            </tr>
+            <tr>
+                <td class="name">
+                    <p>MOCHA</p>
+                    <span>Espresso, sôcôla, sữa tươi, bọt sữa</span>
+                </td>
+                <td>49,000Đ</td>
+                <td>59,000Đ</td>
+            </tr>
+            <tr>
+                <td class="name">
+                    <p>VIETNAMESE COFFEE</p>
+                    <span>Cà phê đá / Cà phê sữa đá</span>
+                </td>
+                <td>29,000Đ</td>
+                <td>39,000Đ</td>
+            </tr>
+            <tr>
+                <td class="name">
+                     <p>VIETNAMESE WHITE COFFEE</p>
+                    <span>Bạc Sỉu</span>
+                </td>
+                <td>29,000Đ</td>
+                <td>39,000Đ</td>
+            </tr>
+        </table>
+        <div class="pattern">
+            <img src="Pattern.png" alt="">
+        </div>
+    </div>
+    
+    <div class="category" id="iceBlend">
+            <h1>ICE BLENDED COFFEE</h1>
+            <p>
+                    NẾU BẠN ĐANG TÌM KIẾM MỘT THỨC UỐNG GIÚP BẠN TỈNH TÁO VÀ SẢNG KHOÁI, BẠN SẼ KHÔNG THẤT
+                     VỌNG VỚI CÁC MÓN CÀ PHÊ ĐÁ XAY. CHỈ CẦN LỰA CHỌN HƯƠNG VỊ ƯA THÍCH KÈM CÀ PHÊ CỦA BẠN 
+                     TRONG THỰC ĐƠN CỦA CHÚNG TÔI.
+            </p>
+            <table>
+                <tr>
+                        <th></th>
+                    
+                        <th>MEDIUM</th>
+                </tr>
+                <tr>
+                    <td class="name">
+                        <p>CARAMEL ICE BLENDED</p>
+                        <span>Espresso, sữa tươi, caramal, kem tươi</span>
+                    </td >
+                    <td>59,000Đ</td>
+                </tr>
+                <tr>
+                    <td class="name">
+                        <p>COOKIE ICE BLEND</p>
+                        <span>Bánh cookie, sữa tươi, kem tươi</span>
+                    </td>
+                        <td>59,000Đ</td>
+                </tr>
+                <tr>
+                        <td class="name">
+                            <p>HAZELNUT ICE BLENDED </p>
+                            <span>Espresso, sữa tươi, hazelnut, kem tươi</span>
+                        </td>
+                            <td>59,000Đ</td>
+                </tr>
+                <tr>
+                        <td class="name">
+                            <p>ICE CHOCOLATE MOCHA ALMOND</p>
+                            <span>Espresso, chocolate, hạnh nhân, bọt sữa</span>
+                        </td>
+                            <td>59,000Đ</td>
+                </tr>
+                <tr>
+                        <td class="name">
+                            <p>MOCHA ICE BLENDED</p>
+                            <span>Espresso, sữa tươi, sôcôla, kem tươi</span>
+                        </td>
+                            <td>59,000Đ</td>
+                </tr>
+                
+            </table>
+            <div class="pattern">
+                    <img src="Pattern.png" alt="">
+                </div>
+            <h1>CHOCOLATE</h1>
+            <p>
+                KHÔNG CÓ KHOẢNG THỜI GIAN NÀO QUÝ GIÁ NHƯ KHI Ở BÊN CẠNH BẠN BÈ, TRỪ KHI BẠN CÓ MỘT LY
+                 CHOCOLATE. VÀ NIỀM HẠNH PHÚC CỦA CHÚNG TÔI LÀ PHỤC VỤ BẠN NHỮNG KHOẢNG THỜI GIAN QUÝ
+                  GIÁ NHƯ THẾ.
+            </p>
+            <table>
+                <tr>
+                        <th></th>
+                      
+                        <th>MEDIUM</th>
+                </tr>
+                <tr>
+                    <td class="name">
+                        <p>CHOCOLATE ICE BLENDED</p>
+                        <span>Sôcôla, sữa tươi, kem tươi</span>
+                    </td>
+                    <td>59,000Đ</td>
+                </tr>
+                <tr>
+                    <td class="name">
+                        <p>HOT CHOCOLATE TOFFEE ALMOND</p>
+                        <span>Sôcôla, hạnh nhân, kem tươi, kẹo marshmallow</span>
+                    </td>
+                        <td>59,000Đ</td>
+                </tr>
+            </table>
+            <div class="pattern">
+                    <img src="Pattern.png" alt="">
+                </div>
+        </div>
+        <div id="para2" class="para">
+           
+        </div>
+        <div class="category" id="tea">
+                <h1>SPECIAL TEA</h1>
+                <p>
+                    BẤT CỨ THỜI ĐIỂM NÀO CŨNG LÀ THỜI GIAN ĐỂ UỐNG MỘT LY TRÀ. BẠN CHỌN LY TRÀ NÀO CHO HÔM NAY?
+                </p>
+                <table>
+                    <tr>
+                            <th></th>
+                            <th>SMALL</th>
+                            <th>MEDIUM</th>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            <p>BLACK TEA MACCHIATO</p>
+                            <span>Trà đen, váng sữa </span>
+                        </td>
+                        <td>38,000Đ</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            <p>FLAVOURED TEA</p>
+                            <span>Trà thảo mộc hương: chanh/bạc hà/ nho đen</span>
+                        </td>
+                        <td>35,000Đ</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            <p>HOT BLACK TEA</p>
+                            <span>Trà đen nóng</span>
+                        </td>
+                        <td>35,000Đ</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="name"> 
+                            <p>MATCHA ICE BLENDED</p>
+                            <span>Trà xanh, sữa tươi, kem tươi, đá xay</span>
+                        </td>
+                        <td>59,000Đ</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            <p>MATCHA LATTE</p>
+                            <span>Trà xanh, sữa tươi (nóng/ đá)</span>
+                        </td>
+                        <td>55,000Đ</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="name"> 
+                            <p>PEACH TEA MANIA</p>
+                            <span>Trà đào, cam, sả</span>
+                        </td>
+                        <td>42,000Đ</td>
+                        <td>55,000Đ</td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            <p>RASPBERRY MACCHIATO</p>
+                            <span>Trà đen, váng sữa, raspberry</span>
+                        </td>
+                        <td>42,000Đ</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <div class="pattern">
+                        <img src="Pattern.png" alt="">
+                    </div>
+            </div>
+            <div id="para3" class="para">
+                
+            </div>
+            <div class="category" id="smoothies">
+                    <h1>SMOOTHIES</h1>
+                    <p>
+                        ĐÓ LÀ SỨC SỐNG, SỰ TƯƠI MÁT VÀ NHỮNG MÀU SẮC. ĐƯỢC TẠO RA BỞI SỰ PHA TRỘN GIỮA SỮA
+                        CHUA, TRÁI CÂY & SỮA TƯƠI, SMOOTHIES SẼ LÀ SỰ LỰA CHỌN HOÀN HẢO ĐỂ THƯ GIÃN VÀ BỔ
+                        SUNG SỨC SỐNG CHO LÀN DA. HÃY LỰA CHỌN CHO NGÀY CỦA BẠN SỰ TƯƠI MỚI VÀ ĐẦY NĂNG LƯỢNG
+                    </p>
+                    <table>
+                        <tr>
+                                <th></th>
+                                <th>SMALL</th>
+                                <th>MEDIUM</th> 
+                        </tr>
+                        <tr>
+                            <td class="name">
+                                <p>BLUBERRY SMOOTHIE</p>
+                                <span>Mứt việt quất, sữa chua, sữa tươi</span>
+                            </td>
+                            <td>59,000Đ</td>
+                        </tr>
+                        <tr>
+                            <td class="name">
+                                <p>BLUEBERRY SODA</p>
+                                <span>Mứt Việt Quốc, soda</span>
+                            </td>
+                                <td>45,000Đ</td>
+                        </tr>
+                        <tr>
+                                <td class="name">
+                                    <p>GREEN APPLE</p>
+                                    <span>Syrup táo xanh, syrup mojito, táo xanh, 7up</span>
+                                </td>
+                                    <td>45,000Đ</td>
+                        </tr>
+                        <tr>
+                                <td class="name">
+                                    <p>MANGO ORANGE COOKIE SMOOTHIE</p>
+                                    <span>Mứt cam-xoài, sữa chua, bánh cookie</span>
+                                </td>
+                                    <td>59,000Đ</td>
+                        </tr>
+                        <tr>
+                                <td class="name">
+                                    <p>MOJITO LEMON</p>
+                                    <span>Chanh tươi, sả, lá bạc hà, soda</span>
+                                </td>
+                                    <td>45,000Đ</td>
+                        </tr>
+                        <tr>
+                                <td class="name">
+                                    <p>MOJITO PASSION FRUIT</p>
+                                    <span>Chanh dây, sả, lá bạc hà, soda</span>
+                                </td>
+                                    <td>45,000Đ</td>
+                        </tr>
+                        <tr>
+                                <td class="name">
+                                    <p>RASPBERRY SODA</p>
+                                    <span>Dâu rừng tươi, soda</span>
+                                </td>
+                                    <td>45,000Đ</td>
+                        </tr>
+                        <tr>
+                                <td class="name">
+                                    <p>STRABERRY GUAVA COOKIE SMOOTHIE</p>
+                                    <span>Mứt dâu-ổi, sữa chua, bánh cookie</span>
+                                </td>
+                                    <td>59,000Đ</td>
+                        </tr>
+                        
+                    </table>
+                    <div class="pattern">
+                            <img src="Pattern.png" alt="">
+                        </div>
+            </div>
+            <div id="para4" class="para">
+                
+            </div>
+            <div id="last">
+                    <a href="home.html" >
+                            <img src="logo.png" >
+                     </a>
+                <p>
+                        223 Võ Văn Tần, Quận 3, HCM<br>
+                        Hotline : 028 71 087 088 <br>
+                        Giao hàng miễn phí : 1800 6936<br><br>
+                        Điều khoản bảo mật<br><br>
+                </p>
+                <p id="end">
+                       &copy; 2014 - 2017 - ALL RIGHTS RESERVED. POWERED BY HARAVAN 
+                </p>
+            </div>
+</body>
+</html>

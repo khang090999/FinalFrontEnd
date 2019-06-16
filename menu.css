@@ -1,0 +1,310 @@
+body
+{  
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    background-image: url("bg-wave1.png");
+    transition: all 1s;  
+    font-family: "Calibri";
+    position: relative;
+    top:0;
+    left: 0;
+}
+#head
+{
+
+    background-image:url("banner-contact.jpg");
+    display: block;
+    float: left;
+    width: 100%;
+    background-size: cover;
+    height: 500px ;
+}
+#head h2
+{
+    color: white;
+    font-size: 3em;
+    width: fit-content;
+    margin-top: 400px;
+    margin-left: 50px;
+}
+#drink
+{
+    float: left;
+    font-size: 0.8em;
+    width: fit-content;
+    display: inline;
+    position: absolute;
+    top: 430px;
+    left: 300px;
+    color: white;
+}
+#drink a
+{
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+#drink a:hover 
+{
+    cursor: pointer;
+    color: rgb(234, 128, 36);
+;}
+.logo
+{
+    float: left;
+    margin: 20px;
+
+}
+#blackLogo
+{
+    float: left;
+    display: none;
+}
+#showMenu
+{
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: white;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 1.5em;
+    transition: all 1s;
+}
+.link
+{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(234, 128, 36);
+    padding: 20px;
+    margin: 1px;
+    font-size: 1.2em;
+    font-weight: 900;
+    box-sizing: border-box;
+}
+#menu
+{
+    transition: all 1s;  
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 1000;
+}
+#showMore
+{
+    transition: all 1s;
+    margin-left: 580px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+#list
+{
+    font-size: 0.8em;
+    font-weight: 800;
+    color: white;
+    background-color: rgb(51, 51, 51);
+    height: 700px;
+    padding: 0;
+    margin: 0;
+    width: 20%;
+    position: fixed;
+    right: -20%;
+    top:0;
+    transition: all 1s;
+    z-index: 1000;
+}
+#list ul
+{
+    list-style-type: none;
+    float: left;
+}
+#showMenu:hover {cursor: pointer}
+#list li
+{
+    margin: 20px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+#list a
+{
+    color: white;
+    text-decoration: none;
+}
+#list a:hover
+{
+    cursor: pointer;
+    color: rgb(234, 128, 36);
+}
+#cheo
+{
+   display: none;
+}
+.category
+{
+    width: 50%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 50px 20px 30px 20px; 
+}
+.category table
+{
+width: 100%;
+}
+.name
+{
+    width: 70%;
+}
+.name span
+{
+    font-size: 0.7em;
+}
+.name p
+{
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+td
+{
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+#espresso
+{
+  position: absolute;
+  top: 500px;
+  right: 30px;
+  z-index: 2;
+}
+#tea
+{
+    position: absolute;
+    top: 1700px;
+    left:   30px;
+    z-index: 2;
+}
+#iceBlend
+{
+    position: absolute;
+    top: 2800px;
+    right: 30px;
+    z-index: 2;
+}
+#smoothies
+{
+    position: absolute;
+    top: 4200px;
+    left:  30px;
+    z-index: 2;
+}
+th 
+{
+    color: rgb(234, 128, 36);
+    padding-bottom: 20px;
+    padding: 0;
+    text-align: left
+}
+
+tr:hover td
+{
+color: rgb(234, 128, 36);
+}
+tr:hover span
+{
+    color: white;
+}
+.category > p
+{
+    font-size: 0.8em;
+    word-spacing: 1px;
+    line-height: 24px;
+}
+.pattern
+{
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.pattern img
+{
+    width: 100%;
+    height: 50px;;
+}
+#last
+{
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top:  5400px; 
+    left: 0;
+    z-index: 2;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 0;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 0.8em;
+
+}
+#last img
+{
+    margin-bottom: 20px;
+}
+#end
+{
+   
+    border-top: 1px solid rgb(111, 111, 111);
+    padding-top: 20px; 
+}
+#para1
+{
+    background-image: url("para1.png");
+    position: absolute;
+    top: 600px;
+    left: 0px;
+    z-index: 1;
+    height: 1000px;
+}
+#para2
+{
+    background-image: url("para2.png");
+    position: absolute;
+    top: 1800px;
+    right:  0px;
+    z-index: 1;
+    height: 900px;
+}
+#para3
+{
+    background-image: url("para3.png");
+    position: absolute;
+    top: 2900px;
+    left: 0px;
+    z-index: 1;
+    height: 1200px;
+}
+
+#para4
+{
+    background-image: url("para2.png");
+    position: absolute;
+    top: 4300px;
+    right:  0px;
+    z-index: 1;
+    height: 1000px;
+}
+.para
+{
+    width: 900px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}

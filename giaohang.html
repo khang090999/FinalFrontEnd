@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Coffee House - Gọi món nhanh - Giao hàng miễn phí</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="giaohang.css" />
+    <script src="giaohang.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="main" onload="getInfo(); showMenu(); showTime(); ready(); showCart();checkShowCup();">
+    <div id="info">
+        <h3>ĐẶT HÀNG VÀ GIAO TẬN NƠI TẠI</h3>
+        <h2>THE COFFEE HOUSE DELIVERY</h2>
+        <div id="step">
+            <img src="img-item-1.jpg">
+            <h5>CÁC BƯỚC ĐẶT MÓN</h5>    
+            <ul>
+                <li><span class="num">1</span>Điền thông tin nhận hàng (tên, số điện thoại, địa chỉ nhận hàng)</li>
+                <li><span class="num">2</span>Chọn món yêu thích</li>
+                <li><span class="num">3</span>Tối đa 30 phút <span style="color: rgb(234, 128, 36);">(*)</span> bạn sẽ có ngay món uống yêu thích!</li>
+            </ul>
+            <p>
+                (*) Thời gian có thể khác nhau tùy thuộc vào vị trí và giao thông tại thời điểm đặt hàng<br>
+                Thời gian phục vụ : 7h-20h
+            </p>
+        </div>
+        <div id="add">
+            <p>
+            &copy; 2018 CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ TRÀ CÀ PHÊ VN <br>
+            86-88 CAO THẮNG, PHƯỜNG 4, QUẬN 3, HCM<br>
+            SỐ GIẤY PHÉP ĐKKD: 0312867172 DO SỞ KẾ HOẠCH VÀ ĐẦU TƯ TPHCM CẤP NGÀY 23/07/2014<br>
+            </p>
+        </div>
+    </div>
+    <div id="delivery">
+        <img src="logo-black.png" alt="The Coffee House">
+        <div id="customerForm">
+        <form action="" method="post" name="checkForm">
+                <h5>Thông tin người nhận</h5>
+            <input type="text" placeholder="Tên" class="half" id="name">
+            <input type="text" placeholder="Số điện thoại"  class="half" id="phone">
+            <span class="warn">Vui lòng nhập tên!</span> <span class="warn" id="warnPhone">Vui lòng nhập đúng số điện thoại!</span>
+            <input type="text" placeholder="Email" class="full" id="mail"><br>
+            <span class="warn">Vui lòng nhập email của bạn!</span><br> 
+            <input type="radio" id="now" name="time" value="Giao hàng ngay" checked > <span style="font-size: 0.8em">Giao hàng ngay</span> 
+            <input type="radio" id="later" name="time" value="Chọn thời gian"  > <span style="font-size: 0.8em">Chọn thời gian</span>  <br>
+            <select id="time">
+                <option>8:00</option>
+                <option>8:30</option>
+                <option>9:00</option>
+                <option>9:30</option>
+                <option>10:00</option>
+                <option>10:30</option>
+                <option>11:00</option>
+                <option>11:30</option>
+                <option>12:00</option>
+                <option>12:30</option>
+                <option>13:00</option>
+                <option>13:30</option>
+                <option>14:00</option>
+                <option>14:30</option>
+                <option>15:00</option>
+                <option>15:30</option>
+                <option>16:00</option>
+                <option>16:30</option>
+                <option>17:00</option>
+                <option>17:30</option>
+                <option>18:00</option>
+                <option>18:30</option>
+                <option>19:00</option>
+                <option>19:30</option>
+                <option>20:00</option>
+            </select>
+            <h5>Địa điểm giao hàng</h5>
+            <input type="text" placeholder="Địa điểm" class="full" id="place" ><br>
+            <input type="text" placeholder="Quận/Huyện" class="half" id="district"> 
+            <input type="text" placeholder="Tỉnh/thành phố"  class="half" id="city">
+            <span class="warn">Vui lòng nhập đầy đủ địa chỉ, quận/huyện, tỉnh/thành phố!</span>
+        </form>
+    </div>
+    <div id="customerInfo">
+        
+
+    </div>
+        <div id="cupNum"></div>
+        <input type="button" value="CHỌN MÓN" id="choose" onclick="getMenu(); return checkInfo();">
+    </div>
+    <div id="menu">
+        <h3>MENU "NHÀ CÀ PHÊ"</h3>
+        <div class="subMenu" id="best">
+            <div class="top">
+                <h4>Món nổi bật </h4>
+                <i class="fa fa-caret-down"></i>
+            </div>
+        </div>
+        <div class="subMenu" id="coffee">
+            <div class="top">
+                
+                <h4>Cà Phê</h4>
+                <i class="fa fa-caret-down"></i>
+            </div>
+        </div>
+        <div class="subMenu" id="chocolate">
+            <div class="top">
+                <h4>Chocolate</h4>
+                <i class="fa fa-caret-down"></i>
+            </div>
+        </div>
+        <div class="subMenu" id="fruit">
+            <div class="top">
+                <h4>Thức Uống Trái Cây</h4>
+                <i class="fa fa-caret-down"></i>
+            </div>
+        </div>
+        
+        <div class="subMenu" id="tea">
+            <div class="top">
+                <h4>Trà Đặc Biệt</h4>
+                <i class="fa fa-caret-down"></i>
+            </div>
+         </div>
+    </div>
+    <div id="number">
+        <div id="title">
+            <h3>ĐƠN HÀNG</h3>
+            <img src="PatternBlack.png" >
+        </div>
+        <div id="shoppingCart"></div>
+     
+    </div>
+   
+</body>
+</html>

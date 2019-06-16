@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Coffee House - Delivery 1800 6936</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" media="screen" href="home.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="home.js"></script>
+    </head>
+<body id="home" onload="setTime(); getPlace();scroll();addPlace();" >
+        <div id="menu">
+                <a href="home.html" class="logo">
+                        <img src="logo.png" id="whiteLogo">
+                        <img src="logo-black.png" id="blackLogo">
+                 </a>
+                 <span id="showMenu" onclick="showList()">
+                        <i id="ngang" class="fa fa-bars"></i>
+                        <i id="cheo" class="fa fa-close"></i>
+                </span>
+        </div>        
+        <div id="head">
+        <div  class="caption">
+            <h1 id="head-caption">CÀ PHÊ NHÉ!</h1>
+            <a href="giaohang.html" target="_blank" class="link">ĐẶT HÀNG ONLINE</a>
+            <a class="link"  onclick="goSmooth(1400)">ĐẾN CỬA HÀNG</a>
+        </div>
+
+            <p><img src="Show-more-icon.png" id="showMore" onclick="goSmooth(800)"></p>        
+       
+    </div>
+    <div id="list">
+            <ul>
+                <li><a href="home.html">TRANG CHỦ</a></li>
+                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="cuahang.html">CỬA HÀNG</a></li>
+                <li><a href="giaohang.html" target="_blank">GIAO HÀNG</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+    </div>  
+   <div id="intro">  
+            <div id="detail">
+                <img src="Paper-cup.png" id="cup">
+                <h1>CÀ PHÊ NHÉ</h1>
+                <p>“Đi cà phê” từ lâu không chỉ đơn thuần là uống một tách cà phê mà còn là dịp gặp mặt
+                    và trò chuyện cùng bạn bè. Tại The Coffee House, chúng tôi trân trọng và đề cao giá
+                    trị kết nối giữa con người và trải nghiệm của khách hàng. Chúng tôi được truyền cảm
+                    hứng từ những tách cà phê và thức uống mình tạo ra. Chúng tôi tin tưởng mạnh mẽ rằng
+                    những thức uống với chất lượng tốt nhất được phục vụ trong không gian thân thiện bởi
+                    những nhân viên tận tâm tại The Coffee House sẽ mang lại những niềm vui bạn có thể 
+                    chia sẻ cùng bạn bè và gia đình.
+                </p>
+            </div>
+   </div>
+   <div id="store">
+        <h3>CÁC CỬA HÀNG <br> THE COFFEE HOUSE</h3>
+        <div class="place" onclick="showImg(im1,im2,im3,im4,im5)"></div>
+        <div class="place" onclick="showImg(im2,im1,im3,im4,im5)"></div>
+        <div class="place" onclick="showImg(im3,im2,im1,im4,im5)"></div>
+        <div class="place" onclick="showImg(im4,im2,im3,im1,im5)"></div>
+        <div class="place" onclick="showImg(im5,im2,im3,im4,im1)"></div>
+   </div>
+   <div id="image">
+       
+    <div id="im1">
+        <div class="main">
+            <div id="hcm" class="city"> 
+                <div class="screen"></div>
+                <div class="screen"></div>
+                <div class="screen"></div>
+                <div class="screen"></div>
+                <div class="screen"></div>
+                <div class="screen"></div>
+                <div class="screen"></div>
+                <div class="screen"></div>
+                <div class="screen"></div>
+                <div class="screen"></div>
+                <div class="screen"></div>
+                <div class="screen"></div>
+                <div class="screen"></div>
+                <div class="screen"></div>
+                <div class="screen"></div>
+                <div class="screen"></div>
+                <div class="screen"></div>
+            </div>
+        </div>
+        <div id="s1" class="slide">
+            <input type="button" class="but" value="" id="hcm1" onclick="changeColor1(hcm1,hcm2,hcm3,hcm4,hcm5,hcm6,hcm7,hcm8,hcm9,hcm10,hcm11,hcm12,hcm13,hcm14,hcm15,hcm16,hcm17); slide( 0)">
+            <input type="button" class="but" value="" id="hcm2" onclick="changeColor1(hcm2,hcm1,hcm3,hcm4,hcm5,hcm6,hcm7,hcm8,hcm9,hcm10,hcm11,hcm12,hcm13,hcm14,hcm15,hcm16,hcm17); slide( 700)">
+            <input type="button" class="but" value="" id="hcm3" onclick="changeColor1(hcm3,hcm1,hcm2,hcm4,hcm5,hcm6,hcm7,hcm8,hcm9,hcm10,hcm11,hcm12,hcm13,hcm14,hcm15,hcm16,hcm17); slide( 1400)">
+            <input type="button" class="but" value="" id="hcm4" onclick="changeColor1(hcm4,hcm1,hcm3,hcm2,hcm5,hcm6,hcm7,hcm8,hcm9,hcm10,hcm11,hcm12,hcm13,hcm14,hcm15,hcm16,hcm17); slide( 2100)">
+            <input type="button" class="but" value="" id="hcm5" onclick="changeColor1(hcm5,hcm1,hcm3,hcm4,hcm2,hcm6,hcm7,hcm8,hcm9,hcm10,hcm11,hcm12,hcm13,hcm14,hcm15,hcm16,hcm17); slide( 2800)">
+            <input type="button" class="but" value="" id="hcm6" onclick="changeColor1(hcm6,hcm1,hcm3,hcm4,hcm5,hcm2,hcm7,hcm8,hcm9,hcm10,hcm11,hcm12,hcm13,hcm14,hcm15,hcm16,hcm17); slide( 3500)">
+            <input type="button" class="but" value="" id="hcm7" onclick="changeColor1(hcm7,hcm1,hcm3,hcm4,hcm5,hcm6,hcm2,hcm8,hcm9,hcm10,hcm11,hcm12,hcm13,hcm14,hcm15,hcm16,hcm17); slide( 4200)">
+            <input type="button" class="but" value="" id="hcm8" onclick="changeColor1(hcm8,hcm1,hcm3,hcm4,hcm5,hcm6,hcm7,hcm2,hcm9,hcm10,hcm11,hcm12,hcm13,hcm14,hcm15,hcm16,hcm17); slide( 4900)">
+            <input type="button" class="but" value="" id="hcm9" onclick="changeColor1(hcm9,hcm1,hcm3,hcm4,hcm5,hcm6,hcm7,hcm8,hcm2,hcm10,hcm11,hcm12,hcm13,hcm14,hcm15,hcm16,hcm17); slide( 5600)">
+            <input type="button" class="but" value="" id="hcm10" onclick="changeColor1(hcm10,hcm2,hcm3,hcm4,hcm5,hcm6,hcm7,hcm8,hcm9,hcm1,hcm11,hcm12,hcm13,hcm14,hcm15,hcm16,hcm17); slide( 6300)">
+            <input type="button" class="but" value="" id="hcm11" onclick="changeColor1(hcm11,hcm2,hcm3,hcm4,hcm5,hcm6,hcm7,hcm8,hcm9,hcm10,hcm1,hcm12,hcm13,hcm14,hcm15,hcm16,hcm17); slide( 7000)">
+            <input type="button" class="but" value="" id="hcm12" onclick="changeColor1(hcm12,hcm2,hcm3,hcm4,hcm5,hcm6,hcm7,hcm8,hcm9,hcm10,hcm11,hcm1,hcm13,hcm14,hcm15,hcm16,hcm17); slide( 7700)">
+            <input type="button" class="but" value="" id="hcm13" onclick="changeColor1(hcm13,hcm2,hcm3,hcm4,hcm5,hcm6,hcm7,hcm8,hcm9,hcm10,hcm11,hcm12,hcm1,hcm14,hcm15,hcm16,hcm17); slide( 8400)">
+            <input type="button" class="but" value="" id="hcm14" onclick="changeColor1(hcm14,hcm2,hcm3,hcm4,hcm5,hcm6,hcm7,hcm8,hcm9,hcm10,hcm11,hcm12,hcm13,hcm1,hcm15,hcm16,hcm17); slide( 9100)">
+            <input type="button" class="but" value="" id="hcm15" onclick="changeColor1(hcm15,hcm2,hcm3,hcm4,hcm5,hcm6,hcm7,hcm8,hcm9,hcm10,hcm11,hcm12,hcm13,hcm14,hcm1,hcm16,hcm17); slide( 9800)">
+            <input type="button" class="but" value="" id="hcm16" onclick="changeColor1(hcm16,hcm2,hcm3,hcm4,hcm5,hcm6,hcm7,hcm8,hcm9,hcm10,hcm11,hcm12,hcm13,hcm14,hcm15,hcm1,hcm17); slide( 10500)">
+            <input type="button" class="but" value="" id="hcm17" onclick="changeColor1(hcm17,hcm2,hcm3,hcm4,hcm5,hcm6,hcm7,hcm8,hcm9,hcm10,hcm11,hcm12,hcm13,hcm14,hcm15,hcm16,hcm1); slide( 11200)">
+        </div>
+    </div>
+    <div id="im2">
+        <div class="main">
+            <div id="hn" class="city"> 
+                <div class="screen"></div>
+                <div class="screen"></div>
+                <div class="screen"></div>
+                <div class="screen"></div>
+            </div>
+        </div>
+        <div id="s2" class="slide">
+            <input type="button" class="but" value="" id="hn1" onclick="changeColor2(hn1,hn2,hn3,hn4); slide1(0)">
+            <input type="button" class="but" value="" id="hn2" onclick="changeColor2(hn2,hn1,hn3,hn4); slide1(700)">
+            <input type="button" class="but" value="" id="hn3" onclick="changeColor2(hn3,hn1,hn2,hn4); slide1(1400)">
+            <input type="button" class="but" value="" id="hn4" onclick="changeColor2(hn4,hn1,hn3,hn2); slide1(2100)">
+        </div>
+    </div>
+    <div id="im3">
+        <div class="main">
+            <div id="dn" class="city"> 
+                <div class="screen"></div>
+            
+            </div>
+            </div>
+        </div>
+        <div id="im4">
+            <div class="main">
+                <div id="bh" class="city"> 
+                    <div class="screen"></div>
+                
+                </div>
+                </div>
+            </div>
+            <div id="im5">
+                <div class="main">
+                    <div id="vt" class="city"> 
+                        <div class="screen"></div>
+                
+                    </div>
+        </div>
+    </div>
+        </div>
+
+   <div id="drink">
+       <ul>
+           
+           <li style="background-image: url(img-item-1.jpg)">
+                <a href="menu.html#espresso">
+                <h3>
+                    <span>ESPRESSO & VIETNAMESE</span>
+                    COFFEE
+                </h3>
+            </a>
+        </li>
+       
+        <li style="background-image: url(img-item-2.jpg)">
+                <a href="menu.html#iceBlend">
+                <h3>
+                    <span>ICEBLEND<br></span>
+                    COFFEE
+                </h3>
+            </a>
+        </li>
+       
+        <li style="background-image: url(img-item-3.jpg)">
+                <a href="menu.html#tea">
+                <h3>
+                    <span>SPECIAL<br></span>
+                    TEA
+                </h3>
+            </a>
+        </li>
+      
+        <li style="background-image: url(img-item-4.jpg)">
+                <a href="menu.html#smoothies">
+                <h3>
+                    MOCKTAIL
+                </h3>
+            </a>
+        </li>
+        
+        <li style="background-image: url(img-item-5.jpg)">
+                <a href="menu.html#iceBlend">
+                <h3>
+                    CHOCOLATE
+                </h3>
+            </a>
+        </li>
+      
+        <li style="background-image: url(img-item-6.jpg)">
+                <a href="menu.html#smoothies">
+                <h3>
+                   SMOOTHIES
+                </h3>
+            </a>
+        </li>
+       </ul>
+   </div>
+   <div id="contact">
+        <h1>LIÊN HỆ</h1>
+<form name="checkForm" method="POST"  action="">
+    <input type="text" placeholder="Tên của bạn" class="info" name="t1">
+    <span id="sp1">Vui lòng nhập tên!</span>
+    <input type="text" placeholder="Email của bạn" class="info" name="t2" >
+    <span id="sp2">Vui lòng nhập đúng email!</span>
+    <textarea placeholder="Viết bình luận" id="comment"></textarea>
+    <input type="submit" value="GỬI" id="send" onclick="return test()">
+</form>
+   </div>
+   <div id="contactImg">
+       <img src="time-line.jpg">
+   </div>
+    <div id="last">
+            <a href="home.html" >
+                    <img src="logo.png" >
+             </a>
+        <p>
+                223 Võ Văn Tần, Quận 3, HCM<br>
+                Hotline : 028 71 087 088 <br>
+                Giao hàng miễn phí : 1800 6936<br><br>
+                Điều khoản bảo mật<br><br>
+        </p>
+        <p id="end">
+               &copy; 2014 - 2017 - ALL RIGHTS RESERVED. POWERED BY HARAVAN 
+        </p>
+    </div>
+
+</body>
+</html>

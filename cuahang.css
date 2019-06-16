@@ -1,0 +1,378 @@
+body
+{  
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    transition: all 1s;  
+    font-family: "Calibri";
+}
+#head
+{
+
+    background-image:url("banner-store.jpg");
+    display: block;
+    float: left;
+    width: 100%;
+    background-size: cover;
+    height: 500px ;
+    text-align: center;
+    vertical-align: middle;
+}
+#head h3
+{
+    color: white;
+    font-size: 2em;
+    margin-top: 100px;
+    margin-bottom: 0;
+   
+}
+#head p
+{
+    color: white;
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+#head select
+{
+    width: 30%;
+    height: 60px;
+    padding: 10px;
+    font-size: 1.7em;
+    
+}
+#head button
+{
+    background-color: rgb(234, 128, 36);
+    color: white;
+    border: none;
+    margin-left: 50px;
+    width: 10%;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 60px;
+    font-size: 2em;
+
+}
+#head button:hover
+{
+    cursor: pointer;
+}
+#head form
+{
+    vertical-align: bottom;
+    margin-top: 100px;
+}
+.logo
+{
+    float: left;
+    margin: 20px;
+
+}
+#blackLogo
+{
+    float: left;
+    display: none;
+}
+#showMenu
+{
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: white;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 1.5em;
+    transition: all 1s;
+}
+.link
+{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(234, 128, 36);
+    padding: 20px;
+    margin: 1px;
+    font-size: 1.2em;
+    font-weight: 900;
+    box-sizing: border-box;
+}
+#menu
+{
+    transition: all 1s;  
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+#showMore
+{
+    transition: all 1s;
+    margin-left: 580px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+#list
+{font-size: 0.8em;
+    font-weight: 800;
+    color: white;
+    background-color: rgb(51, 51, 51);
+    height: 700px;
+    padding: 0;
+    margin: 0;
+    width: 20%;
+    position: fixed;
+    right: -20%;
+    top:0;
+    transition: all 1s;
+}
+#list ul
+{
+    list-style-type: none;
+    float: left;
+}
+#showMenu:hover {cursor: pointer}
+#list li
+{
+    margin: 20px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+#list a
+{
+    color: white;
+    text-decoration: none;
+}
+#list a:hover
+{
+    cursor: pointer;
+    color: rgb(234, 128, 36);
+}
+#cheo
+{
+   display: none;
+}
+
+.listPlace
+{
+    
+    
+    margin-left: 50px;
+    height: 40%;
+    width: 45%;
+    margin-top: 20px;
+    float: left ;
+    margin-bottom: 100px;
+  
+}
+.listPlace img
+{
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 30px;
+    padding: 0;
+    transition: all 1s;
+}
+.coffee
+{
+    color: black;
+    font-size: 0.7em;
+    margin-left: 20px;
+    text-align: left;
+    font-weight: 600;
+    display: inline;;
+}
+.listPlace p
+{
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: left; 
+}
+.listPlace h4
+{
+    
+    display: inline;
+    width: 100%;
+    margin-left: 20px; 
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: left;  
+    font-size: 0.8em; 
+    font-weight: 700;
+}
+.listPlace:hover
+{
+   cursor: pointer;
+} 
+.listPlace:hover img
+{
+    transform: scale(1.2);
+}
+.district
+{
+    color: rgb(155, 155, 155);
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: left;
+    width: 50%;
+    display: inline-block;
+    font-size: 0.8em;
+    padding: 0;
+    float: left;
+    padding-left:10px; 
+}
+.number
+{    
+    display: block;
+}
+.place
+{
+    margin-top: 10px;
+    float: left;
+}
+.place >p
+{
+    margin-left:550px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.place >p span
+{
+    color: rgb(234, 128, 36)
+}
+#hn
+{
+    display: none;
+}
+#dn
+{
+    display: none;
+}
+#vt
+{
+    display: none;
+}
+#vt >div
+{
+    width: 100%;
+}
+#vt h4
+{
+    display: block;
+    margin-left: 250px;
+}
+#vt span
+{
+    display: inline;
+}
+#bh 
+{
+    display: none;
+}
+#bh >div
+{
+    width: 100%;
+}
+#bh h4
+{
+    display: block;
+    margin-left: 250px;
+}
+#bh span
+{
+    display: inline;
+}
+#last
+{
+    width: 100%;
+    background-color: black;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 0;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 0.8em;
+}
+#last img
+{
+    margin-bottom: 20px;
+}
+#end
+{
+   
+    border-top: 1px solid rgb(111, 111, 111);
+    padding-top: 20px; 
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
